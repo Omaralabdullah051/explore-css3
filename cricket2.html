@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=f">
+    <title>Document</title>
+    <style>
+        .field {
+
+            border: 1px solid red;
+
+        }
+
+        .bat {
+            width: 30%;
+            transition: tranform 2s ease-in;
+
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+
+        }
+
+        .field:hover .ball {
+            transform: translate(700px, -100px);
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            background-color: red;
+            position: relative;
+            left: 580px;
+            transition: transform 0.5s ease-out;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <img class="bat" src="images/234180_Gallery_1_0803866-removebg-preview.png" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
